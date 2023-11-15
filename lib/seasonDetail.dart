@@ -563,17 +563,17 @@ class _DescriptionSeasonState extends State<DescriptionSeason>
                                                     children: [
                                                       Singleton.buildInfoRow(
                                                           Icons.category,
-                                                          '$type'),
+                                                          '$type', false),
                                                       Singleton.buildInfoRow(
                                                           Icons.info,
-                                                          '$status'),
+                                                          '$status', false),
                                                       Singleton.buildInfoRow(
                                                           Icons
                                                               .production_quantity_limits,
-                                                          '$inProduction'),
+                                                          '$inProduction', false),
                                                       Singleton.buildInfoRow(
                                                           Icons.calendar_today,
-                                                          '${launchOn ?? ''}'),
+                                                          '${launchOn ?? ''}', false),
                                                       Singleton.buildCountupRow(
                                                           Icons.playlist_play,
                                                           '',

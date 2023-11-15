@@ -2113,7 +2113,7 @@ class Singleton extends StatelessWidget {
     }
   }
 
-  static Widget buildInfoRow(IconData iconData, String text) {
+  static Widget buildInfoRow(IconData iconData, String text, bool isMarquee) {
     return text.isNotEmpty ? Row(
       children: [
         Icon(iconData, color: Colors.white),

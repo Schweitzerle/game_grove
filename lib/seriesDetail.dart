@@ -736,19 +736,19 @@ class _DescriptionSeriesState extends State<DescriptionSeries>
                                         runSpacing: 5,
                                         children: [
                                           Singleton.buildInfoRow(
-                                              Icons.score, '$metacritics'),
+                                              Icons.calendar_today,
+                                              '${launchOn ?? ''}', false),
                                           Singleton.buildInfoRow(
-                                              Icons.contact_page, '$website'),
+                                              Icons.contact_page, '$website', true),
                                           Singleton.buildInfoRow(
                                               Icons.av_timer,
-                                              '$playtime Stunden'),
+                                              '${playtime.toInt()} Hours', false),
                                           Singleton.buildInfoRow(
-                                              Icons.calendar_today,
-                                              '${launchOn ?? ''}'),
+                                            Icons.eighteen_up_rating,
+                                            esrbRating['name'] ?? '', false,
+                                          ),
                                           Singleton.buildInfoRow(
-                                              Icons.eighteen_up_rating,
-                                              esrbRating['name'] ?? '',
-                                              ),
+                                              Icons.score, '${metacritics.toInt()}', false),
                                           Singleton.buildCountupRow(
                                               Icons.star,
                                               '',

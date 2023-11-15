@@ -687,8 +687,8 @@ class _DescriptionState extends State<DescriptionMovies>
                                             spacing: 5,
                                             runSpacing: 5,
                                             children: [
-                                              Singleton.buildInfoRow(Icons.info, '$status'),
-                                              Singleton.buildInfoRow(Icons.calendar_today, '${launchOn ?? ''}'),
+                                              Singleton.buildInfoRow(Icons.info, '$status', false),
+                                              Singleton.buildInfoRow(Icons.calendar_today, '${launchOn ?? ''}', false),
                                               Singleton.buildCountupRow(Icons.access_time, '', runtime.toDouble(), Colors.yellow, 'min'),
                                               Singleton.buildCountupRow(Icons.star, '', voteCount.toDouble(), Colors.orange, ''),
                                               Singleton.buildCountupRow(Icons.money_off, '', budget.toDouble(), Colors.red, '\$'),

@@ -645,15 +645,15 @@ class _DescriptionEpisodeState extends State<DescriptionEpisode>
                                               runSpacing: 5,
                                               children: [
                                                 Singleton.buildInfoRow(
-                                                    Icons.category, '$type'),
+                                                    Icons.category, '$type', false),
                                                 Singleton.buildInfoRow(
-                                                    Icons.info, '$status'),
+                                                    Icons.info, '$status', false),
                                                 Singleton.buildInfoRow(
                                                     Icons.production_quantity_limits,
-                                                    '$inProduction'),
+                                                    '$inProduction', false),
                                                 Singleton.buildInfoRow(
                                                     Icons.calendar_today,
-                                                    '${launchOn ?? ''}'),
+                                                    '${launchOn ?? ''}', false),
                                                 Singleton.buildCountupRow(Icons.star, '', voteCount.toDouble(), Colors.orange, ''),
                                                 SizedBox(height: 10),
                                                 genres.isNotEmpty
